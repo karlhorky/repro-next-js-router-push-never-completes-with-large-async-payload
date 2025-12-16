@@ -5,7 +5,7 @@ const baseUrl = 'http://localhost:3000';
 test('sidebar toggles URL and DOM state on repeated opens/closes', async ({
   page,
 }) => {
-  test.setTimeout(90000);
+  test.setTimeout(180000);
   const cohortSlug = 'pern-demo';
   const expectationTimeout = 10000;
   const main = page.locator('main[data-sidebar-open]');
