@@ -6,7 +6,8 @@
   "scripts": {
     "build": "rm -rf .next && next build",
     "dev": "next dev",
-    "start": "next start"
+    "start": "next start",
+    "test": "playwright test --ui"
   },
   "dependencies": {
     "next": "15.5.9",
@@ -14,6 +15,7 @@
     "react-dom": "19.2.3"
   },
   "devDependencies": {
+    "@playwright/test": "1.57.0",
     "@types/node": "24.10.1",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
