@@ -1,10 +1,12 @@
-import EditButton from './EditButton.tsx';
-import Sidebar from './Sidebar.tsx';
 import type { Appointment } from './appointments.ts';
+import EditButton from './EditButton.tsx';
 
 export default async function AppointmentList(props: {
   appointments: Appointment[];
 }) {
+  await new Promise((resolve) => {
+    setTimeout(resolve, 1200);
+  });
   return (
     <div style={{ display: 'grid', gap: 12 }}>
       <div>Click any edit button to push a query param for the sidebar.</div>
