@@ -1,4 +1,5 @@
-CodeSandbox version: https://codesandbox.io/p/sandbox/next-js-router-push-never-completes-with-large-async-payload-hxcq7t
+- CodeSandbox version: https://codesandbox.io/p/sandbox/next-js-router-push-never-completes-with-large-async-payload-hxcq7t
+- Vercel version: https://repro-next-js-router-push-never-com.vercel.app
 
 Showcasing `router.push()` failing with a long list of items, async components and some delays:
 
