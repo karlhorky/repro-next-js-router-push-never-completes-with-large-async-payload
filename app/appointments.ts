@@ -3,7 +3,7 @@ export type Appointment = { id: number; title: string };
 function buildAppointments() {
   const items: Appointment[] = [];
 
-  for (let index = 1; index <= 160; index += 1) {
+  for (let index = 1; index <= 760; index += 1) {
     items.push({ id: index, title: `Session ${index}` });
   }
 
