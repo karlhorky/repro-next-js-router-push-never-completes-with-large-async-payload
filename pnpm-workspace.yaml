@@ -1,0 +1,30 @@
+# Prevents installation of packages newer than 7 days
+# to mitigate supply chain risks
+# - https://pnpm.io/settings#minimumreleaseage
+minimumReleaseAge: 10080
+minimumReleaseAgeExclude:
+  - '@upleveled/*'
+  - eslint-config-upleveled
+  - stylelint-config-upleveled
+  # - https://github.com/vercel/next.js/security/advisories/GHSA-9qr9-h5gf-34mp
+  # - https://github.com/vercel/next.js/security/advisories/GHSA-mwv6-3258-q52c
+  # - https://github.com/vercel/next.js/security/advisories/GHSA-w37m-7fhw-fmv9
+  # - https://github.com/vercel/next.js/security/advisories/GHSA-5j59-xgg2-r9c4
+  - next@15.5.7 || 15.5.8 || 15.5.9 || 16.0.10
+  - '@next/env@15.5.7 || 15.5.8 || 15.5.9 || 16.0.10'
+  - '@next/mdx@15.5.7 || 15.5.8 || 15.5.9 || 16.0.10'
+  - '@next/swc-darwin-arm64@15.5.7 || 15.5.8 || 15.5.9 || 16.0.10'
+  - '@next/swc-darwin-x64@15.5.7 || 15.5.8 || 15.5.9 || 16.0.10'
+  - '@next/swc-linux-arm64-gnu@15.5.7 || 15.5.8 || 15.5.9 || 16.0.10'
+  - '@next/swc-linux-arm64-musl@15.5.7 || 15.5.8 || 15.5.9 || 16.0.10'
+  - '@next/swc-linux-x64-gnu@15.5.7 || 15.5.8 || 15.5.9 || 16.0.10'
+  - '@next/swc-linux-x64-musl@15.5.7 || 15.5.8 || 15.5.9 || 16.0.10'
+  - '@next/swc-win32-arm64-msvc@15.5.7 || 15.5.8 || 15.5.9 || 16.0.10'
+  - '@next/swc-win32-x64-msvc@15.5.7 || 15.5.8 || 15.5.9 || 16.0.10'
+  # - https://github.com/facebook/react/security/advisories/GHSA-fv66-9v8q-g76r
+  # - https://github.com/facebook/react/security/advisories/GHSA-925w-6v3x-g4j4
+  # - https://github.com/facebook/react/security/advisories/GHSA-2m3v-v2m8-q956
+  # - https://github.com/facebook/react/security/advisories/GHSA-7gmr-mq3h-m5h9
+  - react@19.2.3
+  - react-dom@19.2.3
+  - react-is@19.2.3
